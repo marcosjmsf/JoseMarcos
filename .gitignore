@@ -1,0 +1,15 @@
+*.class
+*.lst
+*.jar
+AmilTeste/target/surefire-reports/TEST-br.com.amil.kart.model.test.DesempenhoIndividualModelTest.xml
+AmilTeste/target/surefire-reports/TEST-br.com.amil.kart.model.test.OutPutModelTest.xml
+AmilTeste/target/surefire-reports/TEST-br.com.amil.kart.model.test.PilotoModelTest.xml
+AmilTeste/target/surefire-reports/TEST-br.com.amil.kart.model.test.VoltaModelTest.xml
+AmilTeste/target/surefire-reports/br.com.amil.kart.model.test.DesempenhoIndividualModelTest.txt
+AmilTeste/target/surefire-reports/br.com.amil.kart.model.test.OutPutModelTest.txt
+AmilTeste/.classpath
+AmilTeste/.project
+AmilTeste/.settings/org.eclipse.jdt.core.prefs
+AmilTeste/.settings/org.eclipse.m2e.core.prefs
+AmilTeste/target/surefire-reports/br.com.amil.kart.model.test.PilotoModelTest.txt
+AmilTeste/target/surefire-reports/br.com.amil.kart.model.test.VoltaModelTest.txt
