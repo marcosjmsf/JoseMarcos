@@ -19,23 +19,29 @@ public class CorridaControl {
 
 		Corrida corrida = new Corrida();
 
-		List<DesempenhoIndividual> listaDesempenho = geraDado.gerarDado(caminho);
+		if(caminho != null && !caminho.equals("")){
 
-		if(listaDesempenho != null && !listaDesempenho.isEmpty()){
+			List<DesempenhoIndividual> listaDesempenho = geraDado.gerarDado(caminho);
 
-			Collections.sort(listaDesempenho);
-			desempenhoIndividualModel.diferencaLider(listaDesempenho);
-			desempenhoIndividualModel.preencherPosicao(listaDesempenho);
-			corrida.setListaDesempenhoIndividual(listaDesempenho);
+			if(listaDesempenho != null && !listaDesempenho.isEmpty()){
 
-			DesempenhoIndividual desempenhoMelhorVoltaCorrida = desempenhoIndividualModel.definirMelhorVoltaCorrida(listaDesempenho);
-			corrida.setDesempenhoMelhorVoltaCorrida(desempenhoMelhorVoltaCorrida);
+				Collections.sort(listaDesempenho);
+				desempenhoIndividualModel.diferencaLider(listaDesempenho);
+				desempenhoIndividualModel.preencherPosicao(listaDesempenho);
+				corrida.setListaDesempenhoIndividual(listaDesempenho);
 
-			System.out.println(outPutModel.gerarOutPut(corrida));
+				DesempenhoIndividual desempenhoMelhorVoltaCorrida = desempenhoIndividualModel.definirMelhorVoltaCorrida(listaDesempenho);
+				corrida.setDesempenhoMelhorVoltaCorrida(desempenhoMelhorVoltaCorrida);
+
+				System.out.println(outPutModel.gerarOutPut(corrida));
+
+			}else{
+
+				throw new Exception("Nenhum dado foi gerado.");
+			}
 
 		}else{
-
-			throw new Exception("Nenhum dado foi gerado.");
+			throw new Exception("Caminho nao informado");
 		}
 	}
 }

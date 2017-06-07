@@ -19,8 +19,13 @@ public class Main {
 		try{
 			CorridaControl corridaControl = new CorridaControl();
 
-			corridaControl.processaLog(args[0]);
-
+			String caminho = args[0];
+			
+			if(caminho != null && !caminho.equals("")){
+				corridaControl.processaLog(caminho);
+			}else{
+				throw new Exception("Por favor informar o caminho do arquivo a ser processado.");
+			}
 		}catch(Exception e){
 			System.out.println("Erro ao processar o log de mensagem: " + e.getMessage());			
 		}
