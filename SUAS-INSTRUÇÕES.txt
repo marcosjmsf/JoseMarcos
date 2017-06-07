@@ -1,0 +1,7 @@
+# JoseMarcos
+
+1 - Projeto maven, para rodar os testes unitarios é so compilar o projeto pelo maven
+2 - O projeto possui uma classe chamada Main, na qual existe o metodo main que 
+rodara a aplicação; para que a aplicação funcione é necessario passar um endereço de aquivo
+via args do main
+3 - A saida do projeto será exibida via System.out.print
